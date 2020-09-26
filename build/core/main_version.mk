@@ -6,10 +6,10 @@ endif
 
 # LineageFE System Version
 ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineagefe.build.version=$(LINEAGE_VERSION) \
-    ro.lineagefe.display.version=$(LINEAGE_DISPLAY_VERSION) \
-    ro.lineagefe.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.modversion=$(LINEAGEFE_VERSION)
+    ro.lineage.version=$(LINEAGE_VERSION) \
+    ro.lineage.display.version=$(LINEAGE_DISPLAY_VERSION) \
+    ro.lineage.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
+    ro.modversion=$(LINEAGE_VERSION)
 
 # LineageOS Platform SDK Version
 ADDITIONAL_BUILD_PROPERTIES += \
