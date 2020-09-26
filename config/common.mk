@@ -252,9 +252,13 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Increase LineageFE Version with each major release.
 LINEAGEFE_VERSION := Isotope
-
 LINEAGE_VERSION := LineageFE-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-$(LINEAGEFE_VERSION)
 LINEAGE_DISPLAY_VERSION := LineageFE-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(LINEAGE_BUILD)-$(LINEAGEFE_VERSION)
+
+# Bootanimation
+
+include vendor/lineage/config/bootanimation.mk
+
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/lineage/build/target/product/security/lineage
